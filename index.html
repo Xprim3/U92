@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>U92 Mobile Shop & Services</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <!-- Vendor CSS Files -->
+
+
+    <!-- Template Main CSS File -->
+
+
+    <!-- =======================================================
+    * Website Designed by Denis Januzi
+    * Created: April 1 2024
+    * Contact Address: denisjanuzi@gmail.com (+38349106068)
+    * Author: Denis Januzi
+    * License: denis.cilesi.com
+    ======================================================== -->
+  </head>
+  <body>
+
+    <header>
+      <div class="nav-box">
+        <span>LOGO</span>
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+      </div>
+    </header>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Ballina</a></li>
+        <li><a href="#">Riparim</a></li>
+        <li><a href="#">Foto</a></li>
+        <li><a href="#">Stafi</a></li>
+        <li><a href="#">Kontakti</a></li>
+        <li><a href="#">Lokacioni</a></li>
+      </ul>
+    </nav>
+
+    
+
+
+    <!-- Hamburger Menu Button Script -->
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const menu = document.querySelector('.menu');
+
+      menuBtn.addEventListener('click', function(event) {
+        event.stopPropagation(); 
+        menu.classList.toggle('active');
+        menuBtn.classList.toggle('active');
+      });
+
+      document.addEventListener('click', function(event) {
+        if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+          menu.classList.remove('active');
+          menuBtn.classList.remove('active');
+        }
+      });
+    </script>
+    <!-- End of Hamburger Menu Button Script -->
+
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

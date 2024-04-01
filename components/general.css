@@ -1,0 +1,64 @@
+/*
+  * Website Designed by Denis Januzi
+  * Created: April 1 2024
+  * Contact Address: denisjanuzi@gmail.com (+38349106068)
+  * Author: Denis Januzi
+  * License: denis.cilesi.com
+*/
+
+/*--------------------------------------------------------------
+# General Style Rules
+--------------------------------------------------------------*/
+
+/* Fonts */
+:root {
+  --font-default: "Montserrat", sans-serif, Arial, Helvetica;
+}
+
+/* Colors */
+:root {
+  --color-default: #222222;
+  --color-primary: #008374;
+  --color-secondary: #f85a40;
+}
+
+/* Size */
+:root {
+  --size-default: 16px;
+  --size-small: 14px;
+  --size-medium: 18px;
+  --size-large: 24px;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+  
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00b6a1;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
